@@ -91,7 +91,7 @@ const marqueeItems = Array(8).fill(marqueeText)
         <!-- Imagen + botones de video -->
         <div class="relative rounded-2xl overflow-hidden">
           <img 
-            src="../assets/niños-jugando.jpg"
+            src="../assets/ninos-jugando.jpg"
             alt="Voluntarios jugando con niños"
             class="w-full h-64 sm:h-80 lg:h-96 object-cover"
           />

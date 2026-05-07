@@ -1,6 +1,6 @@
 <script setup>
 // Asegúrate de tener estas imágenes en tu carpeta src/assets/
-import imgNinoMision from '../assets/mision-niño.png';
+import imgNinoMision from '../assets/mision-nino.png';
 import imgCorazonMision from '../assets/mision-corazon.png';
 import imgManosMision from '../assets/mision-manos.png';
 </script>
