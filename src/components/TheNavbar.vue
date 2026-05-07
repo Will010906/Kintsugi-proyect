@@ -30,7 +30,7 @@ const closeMenu = () => {
         <img 
           :src="logoKintsugi" 
           alt="Kintsugi Love House"
-          class="h-12 sm:h-16 lg:h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+          class="h-12 sm:h-16 lg:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
         />
       </RouterLink>
 

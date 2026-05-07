@@ -16,6 +16,11 @@ const routes = [
   name: 'DonacionTarjeta',
   component: () => import('../views/DonationFormView.vue')
 },
+{
+  path: '/donaciones/deposito',
+  name: 'DonacionDeposito',
+  component: () => import('../views/DonationDepositView.vue')
+},
 ]
 
 const router = createRouter({
