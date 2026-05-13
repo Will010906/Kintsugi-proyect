@@ -35,27 +35,27 @@ import imgManos   from '../assets/manos.png'
         </button>
       </div>
 
-     <!-- 6 columnas alineadas a la base con alturas controladas -->
-<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 items-end">
+   <!-- 5 columnas - imágenes en tamaño natural -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 items-end">
   
-  <!-- COL 1: Stats arriba + Sonrisa abajo (apiladas) -->
+  <!-- COL 1: Stats + Sonrisa (las imágenes ya tienen las formas integradas) -->
   <div class="flex flex-col gap-3">
     <article class="hover:-translate-y-1 transition-transform">
-      <img :src="imgStats" alt="1,304,279 niños" class="w-full h-72 object-cover" />
+      <img :src="imgStats" alt="1,304,279 niños" class="w-full h-auto" />
     </article>
     <article class="hover:-translate-y-1 transition-transform">
-      <img :src="imgSonrisa" alt="Regala una sonrisa" class="w-full h-24 object-cover" />
+      <img :src="imgSonrisa" alt="Regala una sonrisa" class="w-full h-auto" />
     </article>
   </div>
 
-  <!-- COL 2: Foto niños (media-alta) -->
+  <!-- COL 2: Foto niños -->
   <article class="hover:-translate-y-1 transition-transform">
-    <img :src="imgNinos" alt="Niños abrazándose" class="w-full h-80 object-cover" />
+    <img :src="imgNinos" alt="Niños abrazándose" class="w-full h-auto" />
   </article>
 
-  <!-- COL 3: 30% (corta, abajo) -->
-  <article class="bg-kintsugi-peach text-kintsugi-ink p-5 h-44 flex flex-col justify-center text-center hover:-translate-y-1 transition-transform"
-           style="border-radius: 2rem 0.5rem 2rem 2rem;">
+  <!-- COL 3: 30% (tarjeta CSS) -->
+  <article class="bg-kintsugi-peach text-kintsugi-ink p-5 flex flex-col justify-center text-center hover:-translate-y-1 transition-transform"
+           style="border-radius: 2rem 0.5rem 2rem 2rem; aspect-ratio: 1 / 1.1;">
     <p class="font-display text-base leading-tight">
       Ayuda al
       <span class="text-3xl font-700 inline-block underline decoration-kintsugi-plum decoration-2 underline-offset-2">30%</span>
@@ -66,28 +66,25 @@ import imgManos   from '../assets/manos.png'
     </p>
   </article>
 
-  <!-- COL 4: Mono (alta) -->
+  <!-- COL 4: Mono -->
   <article class="hover:-translate-y-1 transition-transform">
-    <img :src="imgMono" alt="Ilustración Kintsugi" class="w-full h-80 object-cover" />
+    <img :src="imgMono" alt="Ilustración Kintsugi" class="w-full h-auto" />
   </article>
 
-  <article class="h-72 hover:-translate-y-1 transition-transform overflow-hidden">
-  <img 
-    :src="imgManos" 
-    alt="Manos juntas" 
-    class="w-full h-full object-contain object-bottom"
-  />
-</article>
-
-  <!-- COL 6: Familia (media) -->
-  <article class="bg-kintsugi-indigo p-5 h-56 flex items-end hover:-translate-y-1 transition-transform"
-           style="border-radius: 0.5rem 2rem 2rem 2rem;">
-    <span class="font-display text-xl text-white leading-tight">
-      Se parte<br/>
-      de nuestra<br/>
-      Familia
-    </span>
-  </article>
+  <!-- COL 5: Manos arriba (imagen) + Familia abajo (tarjeta CSS) -->
+  <div class="flex flex-col gap-3">
+    <article class="hover:-translate-y-1 transition-transform">
+      <img :src="imgManos" alt="Manos juntas" class="w-full h-auto" />
+    </article>
+    <article class="bg-kintsugi-indigo p-5 flex items-end hover:-translate-y-1 transition-transform"
+             style="border-radius: 0.5rem 2rem 2rem 2rem; aspect-ratio: 1 / 0.6;">
+      <span class="font-display text-base text-white leading-tight">
+        Se parte<br/>
+        de nuestra<br/>
+        Familia
+      </span>
+    </article>
+  </div>
 
 </div>
     </div>
